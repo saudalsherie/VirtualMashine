@@ -64,8 +64,7 @@ def manual_grow(crop):
                 print('Value entered not valid - please enter a value between 1 and 10')
         except ValueError:
             print('Value entered not valid - please enter a value between 1 and 10'
-
-   crop.grow(light,water)
+    crop.grow(light,water)
 def display_menu():
     print('1. Grow manually over 1 day')
     print('2. Grow automatically over 30 days')
