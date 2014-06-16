@@ -6,7 +6,7 @@ def display_menu():
     print('Which crop would you like to create')
     print()
     print('1. Potato')
-    print('2.Wheat')
+    print('2. Wheat')
     print()
     print('Please select an option from the above menu')
 
@@ -34,6 +34,6 @@ def main():
     new_crop = create_crop()
     manage_crop(new_crop)
 
-if __name__ = '__main__':
+if __name__ =='__main__':
     main()
             

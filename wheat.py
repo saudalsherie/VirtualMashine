@@ -3,7 +3,7 @@ class Wheat(Crop):
     """A Wheat crop"""
     def __init__(self):
         super().__init__(2,4,6)  #Polymorphism
-        slef._type = 'Wheat'    #overriding
+        self._type = 'Wheat'    #overriding
 
     def grow(self,light,water):
         if light >= self._light_need and water >= self._water_need:

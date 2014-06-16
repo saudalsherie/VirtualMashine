@@ -1,9 +1,10 @@
 from crop import *
+
 class Potato(Crop):
     """A potato crop"""
     def __init__(self):
         super().__init__(2,4,6)  #Polymorphism
-        slef._type = 'Potato'    #overriding
+        self._type = 'Potato'    #overriding
 
     def grow(self,light,water):
         if light >= self._light_need and water >= self._water_need:
@@ -17,7 +18,9 @@ class Potato(Crop):
         self._update_status()
         
 def main():
-    potato_crop = potato()
+    potato_crop = Potato()
+    print(potato_crop.report())
+    manual_grow(potato_crop)
     print(potato_crop.report())
     manual_grow(potato_crop)
     print(potato_crop.report())
