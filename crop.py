@@ -103,7 +103,7 @@ def manage_crop(crop):
         elif option == 0:
             noexit = False
             print()
-    print(' Thank you for using the crop managment program')
+    print('Thank you for using the crop managment program')
 def main():
     new_crop = Crop(1,4,3)
     manage_crop(new_crop)

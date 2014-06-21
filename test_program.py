@@ -34,6 +34,6 @@ def main():
     new_crop = create_crop()
     manage_crop(new_crop)
 
-if __name__ =='__main__':
+if __name__ == '__main__':
     main()
             
