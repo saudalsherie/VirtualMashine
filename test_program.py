@@ -23,6 +23,7 @@ def select_option():
             print('Please enter a valid option')
     return choice
 def create_crop():
+    
     display_menu()
     choice = select_option()
     if choice == 1:
