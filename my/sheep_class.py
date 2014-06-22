@@ -24,21 +24,8 @@ class Sheep(Animal):
         #update status
         self._update_status()
 
-def get_name():
-    valid = False
-    while not valid:
-        name = input("Please enter a name for the sheep: ")
-        if len(name) > 0:
-            valid = True
-        else:
-            print("Error! You need to enter a name for the sheep")
-    return name
 
 def main():
-    name = get_name()
-    #create a new sheep animal
-    new_sheep = Sheep(name)
-    #manually grow the animal
     manual_grow(new_sheep)
     print(new_sheep.report())
     manual_grow(new_sheep)

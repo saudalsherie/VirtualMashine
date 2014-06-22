@@ -23,21 +23,8 @@ class Cow(Animal):
         self._days_growing += 1
         #update status
         self._update_status()
-
-def get_name():
-    valid = False
-    while not valid:
-        name = input("Please enter a name for the cow: ")
-        if len(name) > 0:
-            valid = True
-        else:
-            print("Error! You need to enter a name for the cow")
-    return name
-
 def main():
-    name = get_name()
-    #create a new cow animal
-    new_cow = Cow(name)
+
     #manually grow the animal
     manual_grow(new_cow)
     print(new_cow.report())

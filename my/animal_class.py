@@ -25,7 +25,8 @@ class Animal:
   def report(self):
     #returns a dictionary containing the type, status, growth and days gowing
     return {"type":self._type,"status":self._status,"name":self._name,"weight":self._weight,"days growing":self._days_growing}
-
+    print()
+    print(name)
   def _update_status(self):
     if self._weight > 15:
       self._status = "Old"
@@ -78,6 +79,15 @@ def manual_grow(animal):
       print("Value entered not valid - please enter a value between 1 and 10")
   #grow the crop
   animal.grow(food,water)
+def get_name():
+    valid = False
+    while not valid:
+        name = input("Please enter a name for the animal: ")
+        if len(name) > 0:
+            valid = True
+        else:
+            print("Error! You need to enter a name for the cow")
+    return name
 
 def display_menu():
   print("1. Grow manually over 1 day")
@@ -125,8 +135,10 @@ def manage_animal(animal):
 
 def main():
   #instantiate the class
+  name = get_name()
   new_animal = Animal(name,1,3,3)
   manage_animal(new_animal)
+  print(name)
   
 
 if __name__ == "__main__":

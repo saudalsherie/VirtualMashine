@@ -278,7 +278,7 @@ def plant_crop_in_field(field):
       print()
       print("Field is full - potato not planted")
       print()
-  elif choice == 3:
+  elif choice == 2:
     if field.plant_crop(Wheat()):
       print()
       print("Crop planted!")

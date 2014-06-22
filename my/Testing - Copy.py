@@ -1,5 +1,5 @@
-from sheep_class_Copy import *
-from cow_class_Copy import *
+from sheep_class import *
+from cow_class import *
 
 def display_menu():
     print()
@@ -27,12 +27,16 @@ def create_animal():
     choice = select_option()
     if choice == 1:
         new_animal = Sheep(Animal)
+        name = get_name()
+    #create a new cow animal
+        new_cow = Sheep(name)
     elif choice == 2:
+        name = get_name()
+        new_cow = Cow(name)
         new_animal = Cow(Animal)
     return new_animal
             
 def main():
-    name = get_name()
     new_animal = create_animal()
     manage_animal(new_animal)
 if __name__ == "__main__":
